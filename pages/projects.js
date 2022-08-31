@@ -29,10 +29,10 @@ const Projects = (props) => {
                   className="cursor-pointer rounded-full"
                 />
                 <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                  <h2 className="tracking-widest text-xs text-bold title-font font-medium text-gray-400 mb-1">
                     {item.attributes.category}
                   </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                  <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
                     {item.attributes.title}
                   </h1>
                   <p className="leading-relaxed mb-3">
@@ -40,13 +40,13 @@ const Projects = (props) => {
               
                   </p>
                   <div className="flex items-center flex-wrap capitalize"><b>Languages Used : </b>{item.attributes.languageused}</div>
-                  <div className="links flex flex-row mt-2">
+                  <div className="links flex flex-row mt-2 ">
                   <a
                   href={item.attributes.githublink}
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:shadow-black ease-in duration-300'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:shadow-black ease-in duration-300 hover:bg-black hover:text-white'>
                     <FaGithub />
                   </div>
                 </a>
@@ -55,7 +55,7 @@ const Projects = (props) => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-black cursor-pointer hover:scale-105 ease-in duration-300 ml-5'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-black cursor-pointer hover:scale-105 ease-in duration-300 ml-5 hover:bg-blue-500 hover:text-white'>
                   <FaTv/>
                   </div>
                 </a>
