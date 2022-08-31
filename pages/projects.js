@@ -7,6 +7,7 @@ import { FaGithub,FaTv } from 'react-icons/fa';
 
 
 const Projects = (props) => {
+  
   return (
     <div>  <div id="projects" className="bg-white">
     {/* {console.log("prokects")} */}
@@ -80,9 +81,9 @@ const Projects = (props) => {
 
 export default Projects;
 export async function getStaticProps(){
-  const myprojects = await fetcher(`http://localhost:1337/api/my-projects`);
+  const myprojects = await fetcher(`http://localhost:1337/api/my-projects?populate=*`);
 //   console.log("projects")
-//   console.log(myprojects);
+  // console.log(myprojects.attributes.image);
   return{
       props:{
           myprojects:myprojects,

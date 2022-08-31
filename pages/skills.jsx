@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Logo from "../public/assets/logo.jpg";
 import RJs from "../public/assets/react.png";
+import { fetcher } from "../lib/api";
+
 
 const Skills = () => {
   return (
@@ -339,7 +341,7 @@ const Skills = () => {
                     />
                   </div>
                   <div className="text-center">
-                    <p className="text-xl text-black font-bold mb-2">VueJS</p>
+                    <p className="text-xl text-black font-bold mb-2">{}</p>
                     <p className="text-base text-gray-400 font-normal">
                       ________________________________________
                     </p>
@@ -375,3 +377,13 @@ const Skills = () => {
 };
 
 export default Skills;
+export async function getStaticProps(){
+  const myskills = await fetcher(`http://localhost:1337/api/skills`);
+//   console.log("projects")
+    // console.log(myskills);
+  return{
+      props:{
+        myskills:myskills,
+      },
+  }
+}
