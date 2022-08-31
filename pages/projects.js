@@ -46,7 +46,7 @@ const Projects = (props) => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:shadow-black ease-in duration-300'>
                     <FaGithub />
                   </div>
                 </a>
@@ -55,7 +55,7 @@ const Projects = (props) => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 ml-5'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-black cursor-pointer hover:scale-105 ease-in duration-300 ml-5'>
                   <FaTv/>
                   </div>
                 </a>
