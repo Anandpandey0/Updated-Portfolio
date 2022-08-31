@@ -56,19 +56,19 @@ const Navbar = () => {
               <Link href='/'>Home</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#about'>About</Link>
+              <Link href='/about'>About</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#projects'>Projects</Link>
+              <Link href='/projects'>Projects</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#skills'>Skills</Link>
+              <Link href='/skills'>Skills</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#resume'>Resume</Link>
+              <Link href='/resume'>Resume</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#contact'>Contact Me</Link>
+              <Link href='/contact'>Contact Me</Link>
             </li>
           </ul>
           <div
@@ -125,27 +125,27 @@ const Navbar = () => {
                   Home
                 </li>
               </Link>
-              <Link href='/#about'>
+              <Link href='/about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm hover:cursor-pointer'>
                   About
                 </li>
               </Link>
-              <Link href='/#projects'>
+              <Link href='/projects'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm hover:cursor-pointer'>
                   Projects
                 </li>
               </Link>
-              <Link href='/#skills'>
+              <Link href='/skills'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm hover:cursor-pointer'>
                   Skills
                 </li>
               </Link>
-              <Link href='/#resume'>
+              <Link href='/resume'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm hover:cursor-pointer'>
                   Resume
                 </li>
               </Link>
-              <Link href='/#contact'>
+              <Link href='/contact'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm hover:cursor-pointer'>
                   Contact
                 </li>

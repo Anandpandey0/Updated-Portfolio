@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div id="contact" className="h-3/4 w-3/4 mx-auto mt-10 ">
+    <div id="contact" className="h-3/4 w-3/4 mx-auto mt-10 overflow-x-clip">
       <div className="contact-body border-solid border-2 border-red-700 h-full flex flex-col flex-wrap justify-evenly ">
       
         <div className="contact-form  ">
