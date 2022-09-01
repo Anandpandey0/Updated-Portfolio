@@ -5,4 +5,9 @@ const nextConfig = {
 }
 
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+      domains: ['github.com' , 'images.unsplash.com','raw.githubusercontent.com'],
+      formats: ["image/webp"],
+  },
+};
