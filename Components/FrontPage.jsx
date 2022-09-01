@@ -30,7 +30,7 @@ const FrontPage = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className=" shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 ml-10 bg-blue-600 text-white">
+              <div className=" shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 ml-10 bg-slate-300 hover:bg-blue-500 hover:text-white rounded-l ">
                 <FaLinkedinIn />
               </div>
             </a>
@@ -39,13 +39,13 @@ const FrontPage = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 mx-6 bg-black text-white">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 mx-6 bg-slate-300 hover:bg-black hover:text-white   ">
                 <FaGithub />
               </div>
             </a>
           </div>
           <div className="like-button flex flex-start mt-5 mx-10 ">
-            <button className="shadow-xl shadow-gray-400 bg-blue-800 cursor-pointer hover:scale-105 ease-in  duration-300 rounded-md p-2 text-white " >⭐Star My Github </button>
+            <button className="shadow-xl shadow-gray-400 bg-blue-800 cursor-pointer hover:scale-105 ease-in  duration-300 rounded-md p-2 text-white " > <Link href="https://github.com/Anandpandey0/Updated-Portfolio" >⭐Star My Github</Link>  </button>
           </div>
         </div>
         <div className="right justify-center items-center align-center border-solid border-2 border-green-500 overflow-hidden ml-6 rounded-full w-2/5 h-2/5">
