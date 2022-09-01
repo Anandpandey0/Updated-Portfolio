@@ -80,6 +80,35 @@ const Skills = (props) => {
                
               </div>
             </section>
+            <h2 className="flex justify-center ">Other Languages</h2>
+            <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {props.other.data.map((item)=>{
+                return (
+                  <>
+                  <div className="w-full bg-white rounded-lg shadow-lg  flex flex-col justify-center items-center  shadow-black  cursor-pointer hover:scale-105 ease-in  duration-300 p-2">
+                  <div className="mb-8 " >
+                    <Image
+                      src={item.attributes.imageurl}
+                      alt={item.attributes.name}
+                      width="100"
+                      height="100"
+                      objectFit='contain'
+                      className="rounded-full object-cover items-center flex justify-center  "
+                    />
+                  </div>
+                  <div className="text-center">
+                    <p className="text-xl text-black font-bold mb-2">{item.attributes.name}</p>
+                    
+                  </div>
+                </div>
+                </>
+                )
+              })}
+              
+               
+              </div>
+            </section>
           </div>
         </div>
       </div>
@@ -91,11 +120,13 @@ export default Skills;
 export async function getStaticProps(){
   const frontend = await fetcher(`http://localhost:1337/api/frontends`);
   const framework = await fetcher(`http://localhost:1337/api/frameworks`)
+  const other = await fetcher(`http://localhost:1337/api/others`)
 //  console.log(framework.data)
   return{
       props:{
         frontend:frontend,
         framework:framework,
+        other:other,
       },
   }
 }
