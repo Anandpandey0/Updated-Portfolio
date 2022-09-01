@@ -22,12 +22,13 @@ const Projects = (props) => {
                     <div className="p-4 w-1/3 ">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-xl shadow-blue-800  cursor-pointer hover:scale-105 ease-in  duration-300  p-2 bg-[#ecf0f3] align-middle items-center ml-auto">
                 {/* <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog"> */}
-                <div className="imagefolder flex align-middle justify-center"><Image
+                <div className="imagefolder flex align-middle justify-center "><Image
                   src={item.attributes.imageurl}
                   alt={item.attributes.title}
                   width="200"
                   height="200"
-                  className="cursor-pointer rounded-xl"
+              
+                  className="cursor-pointer rounded-xl border-2 border-solid border-black"
                 /></div>
                 
                 <div className="p-6">
